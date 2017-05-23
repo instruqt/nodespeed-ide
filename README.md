@@ -1,9 +1,9 @@
 # nodeSpeed IDE
-nodeSpeed IDE is a server for providing hosted version of the popular code editor [Brackets](http://brackets.io/). 
+nodeSpeed IDE is a server for providing hosted version of the popular code editor [Brackets](http://brackets.io/){:target="_blank"}. 
 
-ndoeSpeed IDE is initially based on the [Brackets Server](https://github.com/rabchev/brackets-server) project. Thanks to [Boyan Rabchev](https://github.com/rabchev) for starting this project. As it is no longer being actively maintained, we have decided to launch our fork as a project with a new name.  
+ndoeSpeed IDE is initially based on the [Brackets Server](https://github.com/rabchev/brackets-server){:target="_blank"} project. Thanks to [Boyan Rabchev](https://github.com/rabchev){:target="_blank"} for starting this project. As it is no longer being actively maintained, we have decided to launch our fork as a project with a new name.  
 
-nodeSpeed IDE uses a node.js Express server and includes an implementation of [xterm.js](https://github.com/sourcelair/xterm.js/) toprovide browser based terminal access. 
+nodeSpeed IDE uses a node.js Express server and includes an implementation of [xterm.js](https://github.com/sourcelair/xterm.js/){:target="_blank"} toprovide browser based terminal access. 
 
 The Brackets code editor can be loaded directly in a web browser. It doesn’t require additional installations or browser extensions. Brackets works just like the desktop version, except that all projects and files reside on the server instead of the local file system. 
 
@@ -16,7 +16,7 @@ Install the nodeSpeed IDE with one of the following options:
 - By cloning building and runinng
 - By building a docker image and running the IDE from one or more containers using Docker
 - By pulling and running a pre-built Docker image `whogloo/nodespeed-ide` and using this in `docker run` scripts.
-- Sign up for an account on [Spinups.io](https://spinups.io), spin up an instance of nodeSpeed Development and get started in minutes.  
+- Sign up for an account on [Spinups.io](https://spinups.io){:target="_blank"}, spin up an instance of nodeSpeed Development and get started in minutes.  
 
 ## Usage Examples
 ### Command line
@@ -58,7 +58,7 @@ Build image of nodeSpeed IDE using the Dockerfile included in the project and an
 
 or  
 
-Pull a pre-built image from [whogloo/nodespeed-ide](https://hub.docker.com/r/whogloo/nodespeed-ide/) on Docker Hub. 
+Pull a pre-built image from [whogloo/nodespeed-ide](https://hub.docker.com/r/whogloo/nodespeed-ide/){:target="_blank"} on Docker Hub. 
 
 #### Run with Docker 
 
@@ -92,8 +92,8 @@ The following is a list of suggested nodeSpeed IDE specific extensions:
 - [**brackets-duplicate-extension**](https://github.com/whoGloo/brackets-duplicate-extension): Extension to provide support for copying and duplicating files and folders
 
 Custom forks of existing Brackets Extensions: 
-- [**brackets-git**](https://github.com/whoGloo/brackets-git): Custom fork of [brackets-git](https://github.com/zaggino/brackets-git). Kudos to [Martin Zagora](https://github.com/zaggino). 
-- [**brackets-npm-extension**](https://github.com/whoGloo/brackets-npm-registry): Custom fork of [brackets-npm-registry](https://github.com/zaggino/brackets-npm-registry). Kudos to [Martin Zagora](https://github.com/zaggino). 
+- [**brackets-git**](https://github.com/whoGloo/brackets-git){:target="_blank"}: Custom fork of [brackets-git](https://github.com/zaggino/brackets-git){:target="_blank"}. Kudos to [Martin Zagora](https://github.com/zaggino). 
+- [**brackets-npm-extension**](https://github.com/whoGloo/brackets-npm-registry){:target="_blank"}: Custom fork of [brackets-npm-registry](https://github.com/zaggino/brackets-npm-registry){:target="_blank"}. Kudos to [Martin Zagora](https://github.com/zaggino). 
 
 It has been necessary to modify some of the extensions for them to work with the IDE, as many of the existing extensions are dependent on local OS and filesystem features. 
 
@@ -128,4 +128,4 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-nodeSpeed is a registered trademark of [whoGloo, Inc.](https://whogloo.io). 
+nodeSpeed is a registered trademark of [whoGloo, Inc.](https://whogloo.io){:target="_blank"}. 
