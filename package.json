@@ -87,9 +87,7 @@
   "bugs": {
     "url": "https://github.com/whoGloo/nodespeed-ide/issues"
   },
-  "license": {
-    "type": "MIT"
-  },
+  "license": "MIT",
   "engines": {
     "brackets": "1.8.0"
   },
