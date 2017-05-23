@@ -22,7 +22,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
   curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash - && \
   apt-get install -y nodejs && \
-  npm install -g grunt-cli && \
+  npm install -g grunt-cli gulp && \
   npm cache clean
 
 # Add a nodespeed user so that we we are not running as root
@@ -40,6 +40,9 @@ RUN git clone https://github.com/whoGloo/nodespeed-ide.git brackets-server && \
     cd /var/brackets-server && \
     git submodule update --init --recursive && \
     npm install && \
+    cd embedded-ext/brackets-file-upload && npm install && \
+    cd ../brackets-nodespeed-custom && npm install && \
+    cd ../brackets-npm-registry && npm install && gulp build && cd .. && \
     grunt build
 
 WORKDIR /var/brackets-server

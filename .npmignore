@@ -8,7 +8,6 @@ test
 Gruntfile.js
 jsdoc.json
 CONTRIBUTING.md
-brackets/
 brackets-src
 embedded-ext
 examples
