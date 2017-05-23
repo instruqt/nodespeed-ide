@@ -1,22 +1,22 @@
 # nodeSpeed IDE
-nodeSpeed IDE is a server for providing hosted version of the popular code editor [Brackets](http://brackets.io/){:target="_blank"}. 
+nodeSpeed IDE is a server for providing hosted version of the popular code editor <a href="http://brackets.io/" target="_blank">Brackets</a>. 
 
-ndoeSpeed IDE is initially based on the [Brackets Server](https://github.com/rabchev/brackets-server){:target="_blank"} project. Thanks to [Boyan Rabchev](https://github.com/rabchev){:target="_blank"} for starting this project. As it is no longer being actively maintained, we have decided to launch our fork as a project with a new name.  
+nodeSpeed IDE is initially based on the <a href="https://github.com/rabchev/brackets-server" target="_blank">Brackets Server</a> project. Thanks to <a href="https://github.com/rabchev" target="_blank">Boyan Rabchev</a> for starting this project. As it is no longer being actively maintained, we have decided to launch our fork as a project with a new name.  
 
-nodeSpeed IDE uses a node.js Express server and includes an implementation of [xterm.js](https://github.com/sourcelair/xterm.js/){:target="_blank"} toprovide browser based terminal access. 
+nodeSpeed IDE uses a node.js Express server and includes an implementation of <a href="https://github.com/sourcelair/xterm.js" target="_blank">xterm.js</a> toprovide browser based terminal access. 
 
 The Brackets code editor can be loaded directly in a web browser. It doesn’t require additional installations or browser extensions. Brackets works just like the desktop version, except that all projects and files reside on the server instead of the local file system. 
 
 nodeSpeed IDE is mainly intended to be used with an implementation with Docker containers, making it fast and easy to spin up and run a hosted development environment. All of our testing is therefore done by running in a Docker environment. 
 
-nodeSpeed IDE is currently based on Brackets 1.8. To check the current verion of Brackets source used in the server, please see [CHANGELOG](https://github.com/whoGloo/nodespeed-ide/blob/master/CHANGELOG.md).
+nodeSpeed IDE is currently based on Brackets 1.8. To check the current verion of Brackets source used in the server, please see <a href="https://github.com/whoGloo/nodespeed-ide/blob/master/CHANGELOG.md" target="_blank">CHANGELOG</a>.
 
 ## Installation
 Install the nodeSpeed IDE with one of the following options: 
 - By cloning building and runinng
 - By building a docker image and running the IDE from one or more containers using Docker
 - By pulling and running a pre-built Docker image `whogloo/nodespeed-ide` and using this in `docker run` scripts.
-- Sign up for an account on [Spinups.io](https://spinups.io){:target="_blank"}, spin up an instance of nodeSpeed Development and get started in minutes.  
+- Sign up for an account on <a href="https://spinups.io" target="_blank">Spinups.io</a>, spin up an instance of nodeSpeed Development and get started in minutes.  
 
 ## Usage Examples
 ### Command line
@@ -58,7 +58,7 @@ Build image of nodeSpeed IDE using the Dockerfile included in the project and an
 
 or  
 
-Pull a pre-built image from [whogloo/nodespeed-ide](https://hub.docker.com/r/whogloo/nodespeed-ide/){:target="_blank"} on Docker Hub. 
+Pull a pre-built image from <a href="https://hub.docker.com/r/whogloo/nodespeed-ide" target="_blank">whogloo/nodespeed-ide</a> on Docker Hub. 
 
 #### Run with Docker 
 
@@ -92,8 +92,8 @@ The following is a list of suggested nodeSpeed IDE specific extensions:
 - [**brackets-duplicate-extension**](https://github.com/whoGloo/brackets-duplicate-extension): Extension to provide support for copying and duplicating files and folders
 
 Custom forks of existing Brackets Extensions: 
-- [**brackets-git**](https://github.com/whoGloo/brackets-git){:target="_blank"}: Custom fork of [brackets-git](https://github.com/zaggino/brackets-git){:target="_blank"}. Kudos to [Martin Zagora](https://github.com/zaggino). 
-- [**brackets-npm-extension**](https://github.com/whoGloo/brackets-npm-registry){:target="_blank"}: Custom fork of [brackets-npm-registry](https://github.com/zaggino/brackets-npm-registry){:target="_blank"}. Kudos to [Martin Zagora](https://github.com/zaggino). 
+- <a href="https://github.com/whoGloo/brackets-git" target="_blank">**brackets-git**</a>: Custom fork of <a href="https://github.com/zaggino/brackets-git" target="_blank">brackets-git</a>. Kudos to <a href="https://github.com/zaggino" target="_blank">Martin Zagora</a>. 
+- <a href="https://github.com/whoGloo/brackets-npm-registry" target="_blank">**brackets-npm-extension**</a>: Custom fork of <a href="https://github.com/zaggino/brackets-npm-registry" target="_blank">brackets-npm-registry</a>. Kudos again to <a href="https://github.com/zaggino" target="_blank">Martin Zagora</a>. 
 
 It has been necessary to modify some of the extensions for them to work with the IDE, as many of the existing extensions are dependent on local OS and filesystem features. 
 
@@ -102,7 +102,7 @@ There are several other extensioons that could be recommended for a productive i
 # Contributing
 Please review issue for this project and if you don't find an existing issue that covers what you are looking for - feel free to log one. We welcome bug reports, suggestions for new or changed features and even more - PRs from those brave enough to contribute working changes.  
 
-Please see [`CONTRIBUTING.md`](https://github.com/whoGloo/nodespeed-ide/blob/master/CONTRIBUTING.md)
+Please see <a href="https://github.com/whoGloo/nodespeed-ide/blob/master/CONTRIBUTING.md" target="_blank">`CONTRIBUTING.md`</a>.
 
 # License
 MIT License
@@ -128,4 +128,4 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-nodeSpeed is a registered trademark of [whoGloo, Inc.](https://whogloo.io){:target="_blank"}. 
+nodeSpeed is a registered trademark of <a href="https://whogloo.io" target="_blank">whoGloo, Inc.</a>. 
