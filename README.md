@@ -128,4 +128,4 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-nodeSpeed is a registered trademark of [whoGloo, Inc.](https://whogloo.io). 
+nodeSpeed is a registered trademark of [whoGloo, Inc.](https://whogloo.com). 
