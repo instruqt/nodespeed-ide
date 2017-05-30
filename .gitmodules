@@ -4,15 +4,6 @@
 [submodule "embedded-ext/client-fs"]
 	path = embedded-ext/client-fs
 	url = https://github.com/whoGloo/brackets-remote-fs.git
-[submodule "brackets-file-upload"]
-	path = embedded-ext/brackets-file-upload
-	url = https://github.com/whoGloo/brackets-file-upload.git
-[submodule "brackets-duplicate-extension"]
-	path = embedded-ext/brackets-duplicate-extension
-	url = https://github.com/whoGloo/brackets-duplicate-extension.git
 [submodule "brackets-nodespeed-custom"]
 	path = embedded-ext/brackets-nodespeed-custom
 	url = https://github.com/whoGloo/brackets-nodespeed-custom.git
-[submodule "brackets-npm-registry"]
-	path = embedded-ext/brackets-npm-registry
-	url = https://github.com/whoGloo/brackets-npm-registry.git
