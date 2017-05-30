@@ -4,6 +4,3 @@
 [submodule "embedded-ext/client-fs"]
 	path = embedded-ext/client-fs
 	url = https://github.com/whoGloo/brackets-remote-fs.git
-[submodule "brackets-nodespeed-custom"]
-	path = embedded-ext/brackets-nodespeed-custom
-	url = https://github.com/whoGloo/brackets-nodespeed-custom.git
