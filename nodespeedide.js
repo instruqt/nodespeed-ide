@@ -167,7 +167,8 @@
     app.set('views', path.join(__dirname, 'views'));
 
     app.engine('handlebars', exphbs({
-        defaultLayout: 'main'
+        defaultLayout: 'main',
+        layoutsDir: path.join(__dirname, 'views')
     }));
 
     app.set('view engine', 'handlebars');
