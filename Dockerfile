@@ -40,6 +40,7 @@ RUN git clone https://github.com/whoGloo/nodespeed-ide.git brackets-server && \
     cd /var/brackets-server && \
     git submodule update --init --recursive && \
     npm install && \
+    cd node_modules/@whogloo/nodespeed-terminal && npm install && cd ../.. && \
     grunt build
 
 WORKDIR /var/brackets-server
