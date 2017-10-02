@@ -1,7 +1,7 @@
 # nodeSpeed IDE
 nodeSpeed IDE is a server for providing hosted version of the popular code editor [Brackets](http://brackets.io/). 
 
-ndoeSpeed IDE is initially based on the [Brackets Server](https://github.com/rabchev/brackets-server) project. Thanks to [Boyan Rabchev](https://github.com/rabchev) for starting this project. As it is no longer being actively maintained, we have decided to launch our fork as a project with a new name.  
+nodeSpeed IDE is initially based on the [Brackets Server](https://github.com/rabchev/brackets-server) project. Thanks to [Boyan Rabchev](https://github.com/rabchev) for starting this project. As it is no longer being actively maintained, we have decided to launch our fork as a project with a new name.  
 
 nodeSpeed IDE uses a node.js Express server and includes an implementation of [xterm.js](https://github.com/sourcelair/xterm.js/) toprovide browser based terminal access. 
 
@@ -89,7 +89,7 @@ Run nodeSpeed IDE with Docker from the command line:
 The IDE can now be accessed from `http://localhost:6800`. If you are running docker with a reverse proxy or load balancer, the URL will be different. 
 
 ## Suggested Brackets extensions
-As part of the hosted version of nodeSpeed IDE (ndoeSpeed Development), a number of Brackets extensions have been developed or forked and updated to work in the nodeSpeed IDE. These extensions add extra functionality to the IDE in various ways. 
+As part of the hosted version of nodeSpeed IDE (nodeSpeed Development), a number of Brackets extensions have been developed or forked and updated to work in the nodeSpeed IDE. These extensions add extra functionality to the IDE in various ways. 
 
 The following is a list of suggested nodeSpeed IDE specific extensions: 
 
