@@ -70,7 +70,7 @@ docker create --name nodespeed-ide-data -v /projects -v /projects/.brackets-serv
 
 Set directory permissions
  ```
- docker run -it --rm --volumes-from nodespeed-ide-data whogloo/nodespeed-ide /bin/bash -c "/var/brackets-server/init-nodespeed-dirs.sh"
+ docker run -it --rm --volumes-from nodespeed-ide-data whogloo/nodespeed-ide /bin/bash -c "/var/brackets-server/scripts/init-nodespeed-dirs.sh"
  ```
 
 Run nodeSpeed IDE with Docker from the command line: 
@@ -108,10 +108,28 @@ There are several other extensions that could be recommended for a productive im
 
 Some of the extensions above may have dependencices on environment variables or other settings used for nodeSpeed IDE internally at whoGloo. If there are issues with getting any of them to work, please log issues with the appropriate projects so that they can be looked at. PRs are more than welcome for the main project and any of the extensions projects.  
 
-### Docker based installations
-For those using the docker based instructions above, the suggested extensions above can also be installed with the following 
+### Installation
+The extensions above have not been pubished to the Brackets extensions registry. They will therefore not show up in the extension manager. 
+
+They can easily be installed using git from a terminal session or in a bash session from `docker exec`. 
+
+For example: 
+
+```
+cd /projects/.brackets-server/extensions/user
+
+git clone https://github.com/whoGloo/brackets-nodespeed-custom
+cd brackets-nodespeed-custom
+npm install
+
+```
+Remember to restart nodeSpeed IDE after installing extensions manually in this way. 
+
+#### Quick install of extensions in Docker based installations
+For those using the Docker based instructions above, the suggested extensions above can also be installed by running an included script: 
+
  ```
- docker run -it --rm --volumes-from nodespeed-ide-data whogloo/nodespeed-ide /bin/bash -c "/var/brackets-server/install-extensions.sh"
+ docker run -it --rm --volumes-from nodespeed-ide-data whogloo/nodespeed-ide /bin/bash -c "/var/brackets-server/scripts/install-extensions.sh"
  ```
 
 Restart any running nodeSpeed IDE containers after this to activate the extensions. 
