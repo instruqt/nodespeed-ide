@@ -65,12 +65,17 @@ Pull a pre-built image from [whogloo/nodespeed-ide](https://hub.docker.com/r/who
 Create a data container to store code and files so that they are not lost during updates of the image: 
 
 ```
-docker create --name nodespeed-ide-data -v /projects -v /projects/.brackets-server -v /home/nodespeed -v /tmp busybox 
+docker create --name nodespeed-ide-data -v /projects -v /projects/.brackets-server -v /home/nodespeed -v /tmp busybox
 ```
+
+Set directory permissions
+ ```
+ docker run -it --rm --volumes-from nodespeed-ide-data whogloo/nodespeed-ide /bin/bash -c "/var/brackets-server/init-nodespeed-dirs.sh"
+ ```
 
 Run nodeSpeed IDE with Docker from the command line: 
 
- ```
+ ``` 
  docker run -d --name nodespeed-ide --volumes-from nodespeed-ide-data -p 6800:6800 -p 8080:8080 -p 3000:3000 -p 9485:9485 whogloo/nodespeed-ide 
  ```
  
@@ -80,7 +85,9 @@ Run nodeSpeed IDE with Docker from the command line:
  - `8080` Terminal Port 
  - `3000` Port for testing applicatiosn running inside the container
  - `9485` Web Sockets access for terminal instance
- 
+
+The IDE can now be accessed from `http://localhost:6800`. If you are running docker with a reverse proxy or load balancer, the URL will be different. 
+
 ## Suggested Brackets extensions
 As part of the hosted version of nodeSpeed IDE (ndoeSpeed Development), a number of Brackets extensions have been developed or forked and updated to work in the nodeSpeed IDE. These extensions add extra functionality to the IDE in various ways. 
 
@@ -97,7 +104,17 @@ Custom forks of existing Brackets Extensions:
 
 It has been necessary to modify some of the extensions for them to work with the IDE, as many of the existing extensions are dependent on local OS and filesystem features. 
 
-There are several other extensioons that could be recommended for a productive implementation of nodeSpeed IDE. Suggestions are welcome. 
+There are several other extensions that could be recommended for a productive implementation of nodeSpeed IDE. Suggestions are welcome. 
+
+Some of the extensions above may have dependencices on environment variables or other settings used for nodeSpeed IDE internally at whoGloo. If there are issues with getting any of them to work, please log issues with the appropriate projects so that they can be looked at. PRs are more than welcome for the main project and any of the extensions projects.  
+
+### Docker based installations
+For those using the docker based instructions above, the suggested extensions above can also be installed with the following 
+ ```
+ docker run -it --rm --volumes-from nodespeed-ide-data whogloo/nodespeed-ide /bin/bash -c "/var/brackets-server/install-extensions.sh"
+ ```
+
+Restart any running nodeSpeed IDE containers after this to activate the extensions. 
 
 # Contributing
 Please review issue for this project and if you don't find an existing issue that covers what you are looking for - feel free to log one. We welcome bug reports, suggestions for new or changed features and even more - PRs from those brave enough to contribute working changes.  
