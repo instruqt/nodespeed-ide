@@ -135,6 +135,37 @@ For those using the Docker based instructions above, the suggested extensions ab
 
 Restart any running nodeSpeed IDE containers after this to activate the extensions. 
 
+## Custom User keymap
+There are a number of keyboard conflicts when using nodeSpeed IDE in a web browser. The following custom contents can be used as a starting point for custom settings. 
+
+```
+
+{
+    "documentation": "https://github.com/adobe/brackets/wiki/User-Key-Bindings",
+
+    "overrides": {
+        "Alt-N": "file.newDoc",
+        "Alt-O":   "file.open",
+        "Alt-W": "file.close",
+        "Shift-Alt-O": "file.openFolder",
+        "Shift-Alt-W": "file.close_all",
+        "Shift-Alt-L": "edit.splitSelIntoLines",
+        "Alt-/": "edit.lineComment",
+        "Shift-Alt-/": "edit.blockComment",
+        "Alt-T": "navigate.gotoDefinition",
+        "Alt-J": "navigate.jumptoDefinition",
+        "Ctrl-Up": "navigate.nextDoc",
+        "Ctrl-Down": "navigate.prevDoc",
+        "Alt-Q": "navigate.toggleQuickEdit",
+        "Alt-K": "navigate.toggleQuickDocs",
+        "Shift-F1": "help.support",
+        "Alt-Up": "cmd.findPrevious",
+        "Alt-Down": "cmd.findNext"
+    }
+}
+
+``` 
+
 # Contributing
 Please review issue for this project and if you don't find an existing issue that covers what you are looking for - feel free to log one. We welcome bug reports, suggestions for new or changed features and even more - PRs from those brave enough to contribute working changes.  
 
