@@ -94,7 +94,8 @@ As part of the hosted version of nodeSpeed IDE (ndoeSpeed Development), a number
 The following is a list of suggested nodeSpeed IDE specific extensions: 
 
 - [**brackets-nodespeed-custom**](https://github.com/whoGloo/brackets-nodespeed-custom): This is our main custom project and it adds extra menu items to the IDE, including extra navigation menu items for **Terminal** (nodeSpeed Terminal in a separate browser tab) and **Preview** (preview of applications run from the IDE using port 3000). 
-- [**nodespeed-terminal**](https://github.com/whoGloo/nodespeed-terminal): Node Express project with Golden Layout used to implement a multi instance terminal that can run in a separate tab browser, attaching to the bash shell of the IDE machine (normally a Docker container)
+- [**nodespeed-terminal**](https://github.com/whoGloo/nodespeed-terminal): Node Express project with Golden Layout used to implement a multi instance terminal that can run in a separate tab browser, attaching to the bash shell of the IDE machine (normally a Docker container). 
+With this extension installed, a terminal can be accessed from the browser. For example: `http://localhost:8080`. 
 - [**brackets-file-upload**](https://github.com/whoGloo/brackets-file-upload): Extension to provide upload and download of files and directories from the IDE
 - [**brackets-duplicate-extension**](https://github.com/whoGloo/brackets-duplicate-extension): Extension to provide support for copying and duplicating files and folders
 
