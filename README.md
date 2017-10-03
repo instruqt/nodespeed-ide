@@ -16,7 +16,6 @@ Install the nodeSpeed IDE with one of the following options:
 - By cloning building and runinng
 - By building a docker image and running the IDE from one or more containers using Docker
 - By pulling and running a pre-built Docker image `whogloo/nodespeed-ide` and using this in `docker run` scripts.
-- Sign up for an account on [Spinups.io](https://spinups.io), spin up an instance of nodeSpeed Development and get started in minutes.  
 
 ## Usage Examples
 ### Command line
