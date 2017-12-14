@@ -1,3 +1,5 @@
+[![Codefresh build status]( https://g.codefresh.io/api/badges/build?repoOwner=whoGloo&repoName=nodespeed-ide&branch=nodespeed-master&pipelineName=nodespeed-ide&accountName=asthomasdk&type=cf-1)]( https://g.codefresh.io/repositories/whoGloo/nodespeed-ide/builds?filter=trigger:build;branch:nodespeed-master;service:5a325734ae579a0001585094~nodespeed-ide)
+
 # nodeSpeed IDE
 nodeSpeed IDE is a server for providing hosted version of the popular code editor [Brackets](http://brackets.io/). 
 
