@@ -20,7 +20,6 @@
     "brackets-server": "./bin/run.js"
   },
   "dependencies": {
-    "@whogloo/nodespeed-terminal": "git+https://git@github.com/whoGloo/nodespeed-terminal.git",
     "archiver": "^1.0.0",
     "body-parser": "^1.15.2",
     "commander": "^2.3.0",
