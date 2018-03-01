@@ -291,7 +291,7 @@ module.exports = function (grunt) {
                     cwd: "brackets-src/src/",
                     src: [
                         'extensions/default/**/*',
-                        'extensions/default/JavaScriptCodeHints/**',
+                        //'extensions/default/JavaScriptCodeHints/**',
                         'extensions/default/*/**/*.{css,less,json,svg,png}',
                         '!extensions/default/*/unittest-files/**',
                         '!extensions/default/*/unittests.js',
